@@ -6,6 +6,7 @@ import com.example.cryptocurrency.data.remote.dto.CoinDto
 import com.example.cryptocurrency.domain.repository.CoinRepository
 import javax.inject.Inject
 
+//useCases will use the repository to access the API and forward the information to the view models
 class CoinRepositoryImplementation @Inject constructor(
     private val api: CoinPaprikaApi
 ) : CoinRepository {
